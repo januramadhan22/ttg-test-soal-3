@@ -15,6 +15,7 @@ export default function WithAuth(
 ) {
   return async (req: NextRequest, next: NextFetchEvent) => {
     const pathname = req.nextUrl.pathname.split("/")[1];
+    console.log(req.url);
 
     if (requiredAuth.includes(pathname)) {
       const token = await getToken({

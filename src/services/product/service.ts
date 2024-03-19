@@ -2,6 +2,7 @@ import instance from "@/lib/axios/instance";
 
 const productServices = {
   getAllProduct: () => instance.get("/product"),
+  getDetailProduct: (id: string) => instance.get(`/product/${id}`),
   addNewProduct: (data: any, token: string) =>
     instance.post(
       "/products",

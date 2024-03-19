@@ -13,11 +13,6 @@ import {
 
 const sideItems = [
   {
-    label: "Members",
-    icon: <BiSolidUserAccount />,
-    url: "/admin/members",
-  },
-  {
     label: "Products",
     icon: <BiSolidPackage />,
     url: "/admin/products",

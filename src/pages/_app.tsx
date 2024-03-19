@@ -11,9 +11,7 @@ export default function App({
 }: AppProps) {
   return (
     <SessionProvider session={session}>
-      <div>
-        <Component {...pageProps} />;
-      </div>
+      <Component {...pageProps} />;
       <ToastContainer stacked />
     </SessionProvider>
   );

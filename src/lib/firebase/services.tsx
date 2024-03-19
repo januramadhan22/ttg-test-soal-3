@@ -72,6 +72,7 @@ export async function updateData(
   callback: Function
 ) {
   const docRef = doc(firestore, collectionName, id);
+  data.created_at = new Date();
   await updateDoc(docRef, data)
     .then(() => {
       callback(true);
